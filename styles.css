@@ -108,59 +108,44 @@ h3 {
     color: #333333; /* Dark gray text */
 }
 
-/* Skills */
+.contact-link {
+    color: #333333; /* Dark gray text */
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.contact-link:hover {
+    color: #808080; /* Medium gray on hover */
+    text-decoration: none;
+}
+
+/* About, Education, Experience, Skills */
+.about p, .education p, .experience p, .experience li, .skills li {
+    font-size: 1.2rem;
+    margin: 8px 0;
+    color: #333333; /* Dark gray text */
+}
+
+.education p strong, .experience p strong {
+    color: #333333; /* Dark gray text */
+}
+
+.experience ul, .skills ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
 .skills ul {
     list-style: none;
-    padding: 0;
     display: flex;
     flex-wrap: wrap;
 }
 
 .skills li {
-    font-size: 1.2rem;
     margin: 10px;
     padding: 10px;
     background-color: #D3D3D3; /* Light gray background */
     border: 2px solid #808080; /* Medium gray border */
-}
-
-/* Summary */
-.summary p {
-    font-size: 1.2rem;
-    color: #333333; /* Dark gray text */
-}
-
-/* Education */
-.education p {
-    font-size: 1.2rem;
-    margin: 8px 0;
-    color: #333333; /* Dark gray text */
-}
-
-.education p strong {
-    color: #333333; /* Dark gray text */
-}
-
-/* Experience */
-.experience p {
-    font-size: 1.2rem;
-    margin: 8px 0;
-    color: #333333; /* Dark gray text */
-}
-
-.experience p strong {
-    color: #333333; /* Dark gray text */
-}
-
-.experience ul {
-    list-style: square;
-    padding-left: 20px;
-}
-
-.experience li {
-    font-size: 1.2rem;
-    margin: 8px 0;
-    color: #333333; /* Dark gray text */
 }
 
 /* Responsive Design */
@@ -211,11 +196,11 @@ h3 {
         padding: 8px;
     }
 
-    .contact p, .summary p, .education p, .experience p, .experience li {
+    .contact p, .about p, .education p, .experience p, .experience li, .skills li {
         font-size: 1rem;
     }
 
-    .nav a {
+    .nav a, .contact-link {
         font-size: 1rem;
     }
 }
